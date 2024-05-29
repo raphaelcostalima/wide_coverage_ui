@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+#menu-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+
+  list-style: none;
+  margin: 2rem 2.625rem;
+}
+
+#menu-links ul a {
+  text-decoration: none;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.313rem;
+  letter-spacing: 0.875px;
+  color: #17233d;
+}
+
+#menu-links ul a:hover {
+  opacity: 0.6;
+}
+
+#sign-up-button {
+  width: 124px;
+  height: 51px;
+  border: none;
+  border-radius: 5px;
+
+  background: #6fbf44;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#sign-up-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  color: azure;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 85px;
+
+  margin-top: 163px;
+  margin-left: 80px;
+  padding-bottom: 102px;
+}
+
+img {
+  width: 595.18px;
+  height: 500px;
+}
+
+h1 {
+  margin: 96px 0 47px 0;
+  width: 582px;
+  height: 164px;
+
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: 0.59px;
+  color: #161a49;
+}
+
+p {
+  width: 493px;
+  height: 99px;
+  margin-bottom: 55px;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.5px;
+  color: #4b505a;
+}
+
+#content-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 1px;
+  color: #6fbf44;
+}
+
+#content-link:hover {
+  opacity: 0.7;
+}
+
+/* media queries */
+
+@media (max-width: 700px) {
+  body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 50% 50%;
+
+    text-align: center;
+  }
+
+  #menu-links ul {
+    display: none;
+  }
+
+  #sign-up-button {
+    position: absolute;
+    right: 15px;
+
+    width: 91px;
+    height: 31px;
+
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+
+  #content {
+    margin-top: 76px;
+  }
+
+  img {
+    padding: 59px 0 22px 0;
+
+    grid-row: 4/6;
+    width: 312px;
+    height: 288px;
+  }
+
+  h1 {
+    width: 278px;
+    height: 60px;
+
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.59px;
+    text-align: center;
+  }
+
+  p {
+    width: 304px;
+    height: 165px;
+
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+}
